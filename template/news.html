@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <title>DevEnv Newsfeed - Najnowsze artykuły na temat programowania</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+
+  <style>
+    /* GLOBAL */
+    a,
+    a:hover {
+      color: #ce1141;
+    }
+
+    .form-control:focus {
+      border-color: #ce1141 !important;
+    }
+
+    .btn {
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #ce1141;
+      border-color: #ce1141;
+    }
+
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary:hover {
+      background-color: #bd0e3c !important;
+      border-color: #bd0e3c !important;
+    }
+
+    .btn-primary:focus {
+      box-shadow: 0 0 0 0.2rem rgba(206, 17, 65, 0.63) !important;
+    }
+
+    .jumbotron {
+      background: #f3f3f3;
+    }
+
+    /* DEVENV THEME */
+    #navbar {
+      background: #ce1141;
+      padding: .7rem 1rem;
+    }
+
+    #navbar .navbar-brand {
+      padding-top: 0;
+    }
+
+    #navbar .navbar-nav a {
+      color: #fff;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    #navbar .navbar-nav a:hover {
+      color: #fff;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    #navbar .navbar-toggler-icon {
+      color: #fff;
+      padding-top: 7px;
+    }
+
+    #introduction {
+      margin-top: 65px;
+    }
+
+    #content .card {
+      background: #fdfdfd;
+      border: 1px solid #ddd;
+      border-left: 2px solid #ce1141;
+      margin-bottom: 20px;
+    }
+
+    #content .card:hover {
+      border-color: #ce1141;
+    }
+
+    #content .card .card-title {
+      font-weight: 400;
+    }
+
+    #content .card .card-link {
+      margin-top: 4px
+    }
+
+    #content .card .card-link:hover {
+      text-decoration: underline;
+    }
+
+    #content .card .card-footer {
+      font-size: 12px;
+    }
+
+    #content .card .card-favicon {
+      position: relative;
+      top: -2px;
+    }
+
+    #footer {
+      background: #212427;
+      color: #fff;
+      padding: 4rem 0;
+      margin-top: 2rem;
+    }
+
+    #footer .devenv-logo {
+      width: 120px;
+    }
+
+    #footer p {
+      margin: 2rem 0 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+      <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <a class="navbar-brand" href="http://devenv.pl"><img src="devenv-logo.png" style="height:23px;"></a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Newsfeed <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Zgłoś bloga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Lista obserwowanych</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://facebook.com/devEnvBlog/">Facebook</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Szukaj">
+        <button class="btn btn-dark my-2 my-sm-0" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </nav>
+
+  <header class="jumbotron text-center" id="introduction">
+    <div class="container">
+      <h1 class="display-4">DevEnv Newsfeed</h1>
+      <p class="lead text-muted">This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron
+        and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+      <p>
+        <a class="btn btn-dark" href="#" role="button">Co tygodniowy newsletter »</a>
+        <a class="btn btn-primary" href="#" role="button">Powiadomienie push »</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container" id="content">
+    <div class="row">
+        <div class="col-lg-6">
+            <article class="card">
+                <div class="card-body">
+                  <header><h4 class="card-title">4Developers Łódź 2017 – Relacja</h4></header>
+                  <div class="card-text">
+                      Za nami 4Developers Łódź - czyli regionalna edycja jeden z największych polskich konferencji dla programistów. Najwidoczniej sukces i zainteresowanie wokół konferencji, skłonił organizatorów do...
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <img src="http://devenv.pl/wp-content/uploads/2017/08/devenv-avatar-favicon.png" class="card-favicon">
+                  <a href="">DevEnv</a> | 2018-11-30
+                  <a href="#" class="card-link float-right">przejdź <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+               </footer>
+            </article>
+            <article class="card">
+                <div class="card-body">
+                  <header><h4 class="card-title">Czy to jest mój kawałek podłogi?</h4></header>
+                  <div class="card-text">
+                      Na początku była wątpliwość: Zacznijmy od najtrudniejszego od ustawienia celu artykułu. Chciałbym, by ten artykuł odpowiedział na pytanie, które mnie najbardziej nurtuje: czy pasuję do...
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <img src="http://devenv.pl/wp-content/uploads/2017/08/devenv-avatar-favicon.png" class="card-favicon">
+                  <a href="">DevEnv</a> | 2018-11-06
+                  <a href="#" class="card-link float-right">przejdź <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+               </footer>
+            </article>
+        </div>
+        <div class="col-lg-6">
+            <article class="card">
+                <div class="card-body">
+                  <header><h4 class="card-title">WebAssembly – nadciąga rewolucja</h4></header>
+                  <div class="card-text">
+                      Gdy Microsoft, Mozilla i Google pracują nad jedną technologią, to wiedz że coś się dzieje... Zanim powstało WebAssembly Zanim przejdę do omawiania głównego tematu, opiszę pokrótce...
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <img src="http://devenv.pl/wp-content/uploads/2017/08/devenv-avatar-favicon.png" class="card-favicon">
+                  <a href="">DevEnv</a> | 2018-11-20
+                  <a href="#" class="card-link float-right">przejdź <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </footer>
+            </article>
+            <article class="card">
+                <div class="card-body">
+                  <header><h4 class="card-title">4developers Łódź – zgarnij zniżkę!</h4></header>
+                  <div class="card-text">
+                      W konferencjach spod szyldu 4developers uczestniczymy od dawna. Są sprawdzoną, rozpoznawalną marką – dostarczającą za każdym razem liczne ścieżki obfitujące głównie w solidne techniczne aspekty. Najbliższa edycja, tym razem „regionalna” odbędzie się 9 listopada 2017 w Łodzi. Ze względu, że czujemy bliskość z prezentowaną tematyką postanowiliśmy objąć tę konferencję patronatem medialnym!
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <img src="http://devenv.pl/wp-content/uploads/2017/08/devenv-avatar-favicon.png" class="card-favicon">
+                  <a href="">DevEnv</a> | 2018-10-27
+                  <a href="#" class="card-link float-right">przejdź <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </footer>
+            </article>
+        </div>
+    </div>
+  </main>
+
+  <footer id="footer" class="text-center">
+    <div class="container">
+
+        <a href="http://devenv.pl"><img class="devenv-logo" 
+        src="devenv-avatar.png" 
+        alt="DevEnv - O programowaniu bez kaca"
+        title="DevEnv - O programowaniu bez kaca"></a>
+
+      <p>Masz pytania? Propozycję? Pisz na: <a href="">kontakt@devenv.pl</a>.</p>
+      <p>Zastanawiasz się jak zgłosić swojego bloga do <strong>DevEnv Newsfeed</strong>?<br>Możesz zrobić to za pomocą formularza <a href="">Zgłoś bloga</a>.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+</body>
+</html>
